@@ -1,0 +1,116 @@
+/* =============== GOOGLE FONTS =============== */
+
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --title-color: #3D425A;
+    --title-color-light: #47D18C;
+    --text-color: #252A3F;
+
+    /*.5rem = 8px | 1rem = 16px ...*/
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* =============== BASE =============== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+/* =============== REUSABLE CSS CLASSES =============== */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f7fb;
+}
+
+.container {
+    padding: 2rem 7rem;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resuld_img {
+    display: flex;
+    column-gap: 7rem;
+}
+
+.resuld_img img {
+    width: 100px;
+}
+
+.cpu_result img {
+    transform: rotate(90deg) rotateY(180deg);
+}
+
+.result {
+    text-align: center;
+    font-size: 2rem;
+    color: #7d2ae8;
+    margin-top: 1.5rem;
+}
+
+.option_imgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity .3s ease;
+}
+
+.option_img:hover {
+    opacity: 1;
+}
+
+.option_img.active {
+    opacity: 1;
+}
+
+.option_img img {
+    width: 50px;
+    pointer-events: none;
+}
+
+.option_img p {
+    color: #7d2ae8;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    pointer-events: none;
+}
